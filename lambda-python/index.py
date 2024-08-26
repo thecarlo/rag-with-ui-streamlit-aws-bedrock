@@ -6,6 +6,19 @@ from botocore.exceptions import ClientError
 
 
 def handler(event, context):
+    auth_token = os.getenv("AUTH_TOKEN")
+
+    authorization_header = event["headers"].get("Authorization") or event[
+        "headers"
+    ].get("authorization")
+
+    if not authorization_header or authorization_header != f"Bearer {auth_token}":
+        print("Unauthorized request")
+        return {
+            "statusCode": 403,
+            "body": json.dumps({"error": "Forbidden"}),
+        }
+
     try:
         parsed_body = json.loads(event["body"])
 
