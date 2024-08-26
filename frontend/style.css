@@ -1,8 +1,8 @@
 body,
 .stApp,
 .stApp * {
-  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif !important;
   font-size: 15px !important;
 }
 
@@ -13,6 +13,7 @@ header {
 .css-18ni7ap.e8zbici2 {
   visibility: hidden;
 }
+
 /* Hide the footer */
 footer {
   visibility: hidden;
@@ -22,7 +23,6 @@ footer {
   background-color: transparent !important;
 }
 
-/* Custom chat message styles */
 .user-message,
 .assistant-message {
   background-color: #2f2f2f;
@@ -32,7 +32,6 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Add spacing between paragraphs and tables inside chat messages */
 .assistant-message p + table,
 .assistant-message div + table {
   margin-top: 20px;
@@ -50,6 +49,6 @@ footer {
 }
 
 textarea::placeholder {
-  color: #cccccca8 !important; /* Adjust this color to your preference */
+  color: #cccccca8 !important;
   opacity: 1 !important;
 }
