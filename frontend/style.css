@@ -1,0 +1,55 @@
+body,
+.stApp,
+.stApp * {
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 15px !important;
+}
+
+/* Hide the Streamlit header and menu */
+header {
+  visibility: hidden;
+}
+.css-18ni7ap.e8zbici2 {
+  visibility: hidden;
+}
+/* Hide the footer */
+footer {
+  visibility: hidden;
+}
+
+.stChatMessage {
+  background-color: transparent !important;
+}
+
+/* Custom chat message styles */
+.user-message,
+.assistant-message {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Add spacing between paragraphs and tables inside chat messages */
+.assistant-message p + table,
+.assistant-message div + table {
+  margin-top: 20px;
+}
+
+.assistant-message table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stChatMessage {
+  background-color: transparent !important;
+  padding-right: 0 !important;
+}
+
+textarea::placeholder {
+  color: #cccccca8 !important; /* Adjust this color to your preference */
+  opacity: 1 !important;
+}
